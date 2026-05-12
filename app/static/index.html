@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinBot</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Financial statement analyzer</p>
+          <h1>Upload statements. FinBot parses and categorizes them for you.</h1>
+          <p class="lede">
+            Drag in a PDF, CSV, or XLSX export and watch the robot mascot track parsing and
+            categorization progress in real time.
+          </p>
+        </div>
+        <div class="robot-panel">
+          <div id="robot" class="robot robot-idle" aria-hidden="true">
+            <span class="robot-eye left"></span>
+            <span class="robot-eye right"></span>
+            <span class="robot-mouth"></span>
+          </div>
+          <p id="progress-text">Ready to scan your statement.</p>
+        </div>
+      </section>
+
+      <section class="upload-card">
+        <form id="analyzer-form">
+          <label class="upload-field" for="statement-file">
+            <span>Select a statement file</span>
+            <input id="statement-file" name="file" type="file" accept=".pdf,.csv,.xlsx" required />
+          </label>
+          <button type="submit">Analyze statement</button>
+        </form>
+      </section>
+
+      <section id="results" class="results hidden">
+        <div class="summary-grid">
+          <article>
+            <span>Transactions</span>
+            <strong id="transaction-count">0</strong>
+          </article>
+          <article>
+            <span>Credits</span>
+            <strong id="credits">$0.00</strong>
+          </article>
+          <article>
+            <span>Debits</span>
+            <strong id="debits">$0.00</strong>
+          </article>
+          <article>
+            <span>Net</span>
+            <strong id="net">$0.00</strong>
+          </article>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Direction</th>
+                <th>Amount</th>
+                <th>Confidence</th>
+              </tr>
+            </thead>
+            <tbody id="transaction-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
