@@ -1,0 +1,39 @@
+date,debits,credits,category,item,type,source,account
+2025-02-14,0.0,244.37,Payroll,"BRIDGEPORT GYM L DES:DIRECT DEP ID:928936317735OFE INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-02-18,0.0,600.0,Transfer,Zelle payment from LUZ MARTINEZ Conf# 99aybbq0m,transfer,boa_checking,BoA Checking
+2025-02-24,0.0,400.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99ayz27l8,transfer,boa_checking,BoA Checking
+2025-02-28,0.0,984.0,Refund,Columbia College DES:NBS REFUND ID:11429395 INDN:Charles Balderas CO ID:8470751402,income,boa_checking,BoA Checking
+2025-03-03,0.0,500.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99azy6wds,transfer,boa_checking,BoA Checking
+2025-03-07,0.0,400.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b0mtl1r,transfer,boa_checking,BoA Checking
+2025-03-14,0.0,200.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b1duri3,transfer,boa_checking,BoA Checking
+2025-02-19,13.22,0.0,Subscriptions,PURCHASE 0218 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-02-26,93.27,0.0,Transfer,CHECKCARD 0226 ISSA INTL SPORTS 8057458111 AZ 82305095057000028820894,income,boa_checking,BoA Checking
+2025-03-04,4.64,0.0,Groceries,CHECKCARD 0303 BURNHAM GROCERS & CHICAGO IL 75187425063000001534965,expense,boa_checking,BoA Checking
+2025-03-04,23.49,0.0,Transfer,PAI ISO 03/03 #000004943 WITHDRWL 828 S WABASH AVE CHICAGO IL,income,boa_checking,BoA Checking
+2025-03-04,7.34,0.0,Gas,CHECKCARD 0303 BP#16361905616 FU CHICAGO IL 55316585063261706294183,expense,boa_checking,BoA Checking
+2025-03-04,4.63,0.0,Transfer,7-ELEVEN 03/04 #000903010 PURCHASE 7-ELEVEN Chicago IL,income,boa_checking,BoA Checking
+2025-03-05,7.97,0.0,Dining,PURCHASE 0304 DD/BR #339728 Q35 3127659952 IL,expense,boa_checking,BoA Checking
+2025-03-05,1.75,0.0,Vending & Snacks,CHECKCARD 0304 CTLP*MARK VEND CO NORTHBROOK IL 52653845064262631028014,expense,boa_checking,BoA Checking
+2025-03-05,1.5,0.0,Gas,CHECKCARD 0304 BP#16361905616 FU CHICAGO IL 55316585064262733295507,expense,boa_checking,BoA Checking
+2025-03-05,3.31,0.0,Transfer,7-ELEVEN 03/05 #000999296 PURCHASE 7-ELEVEN Chicago IL,income,boa_checking,BoA Checking
+2025-03-06,4.64,0.0,Transfer,CHECKCARD 0306 BURNHAM LIQUORS CHICAGO IL 75187425065000001010667,income,boa_checking,BoA Checking
+2025-03-06,4.56,0.0,Gas,CHECKCARD 0305 BP#16361905616 FU CHICAGO IL 55316585065263777264275,expense,boa_checking,BoA Checking
+2025-03-07,6.6,0.0,Dining,CHECKCARD 0306 MCDONALD'S F38525 EVERGREEN PARIL 05140485065720242222139,expense,boa_checking,BoA Checking
+2025-03-07,3.53,0.0,Gas,CHECKCARD 0306 BP#16361905616 FU CHICAGO IL 55316585066264822310203,expense,boa_checking,BoA Checking
+2025-03-10,130.0,0.0,Transfer,CHECKCARD 0306 PAWS CHICAGO CHICAGO IL 85544025066001222992257,income,boa_checking,BoA Checking
+2025-03-10,2.75,0.0,Gas,CHECKCARD 0307 BP#16361905616 FU CHICAGO IL 55316585067265917346266,expense,boa_checking,BoA Checking
+2025-03-10,4.56,0.0,Gas,CHECKCARD 0307 BP#16361905616 FU CHICAGO IL 55316585067265917346274,expense,boa_checking,BoA Checking
+2025-03-10,6.28,0.0,Gas,CHECKCARD 0308 BP#16361905616 FU CHICAGO IL 55316585068266994351178,expense,boa_checking,BoA Checking
+2025-03-10,39.62,0.0,Shopping,PURCHASE 0310 AMAZON MKTPL*JN34 8662161072 WA,expense,boa_checking,BoA Checking
+2025-03-10,5.13,0.0,Gas,CHECKCARD 0309 BP#16361905616 FU CHICAGO IL 55316585069268009234471,expense,boa_checking,BoA Checking
+2025-03-11,3.05,0.0,Transfer,CHECKCARD 0310 CARNICERIA LA GLO CHICAGO IL 85177485069980077837724,income,boa_checking,BoA Checking
+2025-03-11,4.56,0.0,Gas,CHECKCARD 0310 BP#16361905616 FU CHICAGO IL 55316585070269014296304,expense,boa_checking,BoA Checking
+2025-03-11,1883.33,0.0,Shopping,NST BEST BUY 1 03/11 #000645867 PURCHASE 555 W ROOSEVELT R CHICAGO IL,expense,boa_checking,BoA Checking
+2025-02-14,70.0,0.0,Transfer,Zelle payment to Karen Conf# e0e781t6h,transfer,boa_checking,BoA Checking
+2025-02-18,500.0,0.0,Transfer,Zelle payment to Double Og Conf# k410tsco7,transfer,boa_checking,BoA Checking
+2025-02-18,148.15,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:9878 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-02-28,341.46,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:9878 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-03-06,500.0,0.0,Transfer,Zelle payment to Double Og Conf# c74p7xkgi,transfer,boa_checking,BoA Checking
+2025-03-13,296.73,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-03-14,20.0,0.0,Transfer,Zelle payment to Kk Conf# h3wbid25d,transfer,boa_checking,BoA Checking
+2025-03-04,2.5,0.0,Transfer,PAI ISO 03/03 #000004943 WITHDRWL 828 S WABASH AVE CHICAGO,income,boa_checking,BoA Checking

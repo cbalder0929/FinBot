@@ -60,7 +60,7 @@ def _safe_stem(name: str) -> str:
 # rules-only.
 # ---------------------------------------------------------------------------
 USE_OLLAMA = os.getenv("USE_OLLAMA", "0") == "1"
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:0.5b")
 _categorize_uncategorized = None
 
 if USE_OLLAMA:

@@ -1,0 +1,4 @@
+date,debits,credits,category,item,type,source,account
+2025-06-04,0.0,100.0,Transfer,Zelle payment from LUZ MARTINEZ Conf# 99baxaulb,transfer,boa_checking,BoA Checking
+2025-05-19,6.6,0.0,Subscriptions,PURCHASE 0518 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-06-04,399.33,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking

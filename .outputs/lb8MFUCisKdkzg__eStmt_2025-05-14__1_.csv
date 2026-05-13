@@ -1,0 +1,13 @@
+date,debits,credits,category,item,type,source,account
+2025-04-21,0.0,200.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b5f9cfq,transfer,boa_checking,BoA Checking
+2025-05-05,0.0,160.0,Transfer,Zelle payment from LUZ MARTINEZ Conf# 99b72towo,transfer,boa_checking,BoA Checking
+2025-04-21,6.6,0.0,Subscriptions,PURCHASE 0418 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-04-21,93.27,0.0,Transfer,PURCHASE 0421 ISSA INTL SPORTS PHOENIX AZ,income,boa_checking,BoA Checking
+2025-04-22,43.95,0.0,Uncategorized,7ELEVEN-FCTI 04/22 #000106897 WITHDRWL 600 S DEARBORN CHICAGO IL,expense,boa_checking,BoA Checking
+2025-04-18,40.0,0.0,Transfer,Zelle payment to Grassman Conf# ji4gdyhmi,transfer,boa_checking,BoA Checking
+2025-04-28,25.0,0.0,Transfer,Zelle payment to Grassman Conf# hd9tdbwp8,transfer,boa_checking,BoA Checking
+2025-04-28,539.94,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-05-05,204.74,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-05-12,500.0,0.0,Transfer,Zelle payment to Double Og Conf# epxclwog3,transfer,boa_checking,BoA Checking
+2025-05-12,35.0,0.0,Transfer,Zelle payment to EDUARDO FRANCO Conf# cobho5xup,transfer,boa_checking,BoA Checking
+2025-04-22,2.5,0.0,Uncategorized,7ELEVEN-FCTI 04/22 #000106897 WITHDRWL 600 S DEARBORN,expense,boa_checking,BoA Checking

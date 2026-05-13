@@ -1,0 +1,20 @@
+date,debits,credits,category,item,type,source,account
+2025-08-22,0.0,1785.83,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25082210586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-08-22,0.0,43.51,Payroll,"VPC PRUDENTIAL P DES:PAYROLL ID:69910349451562U INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-09-05,0.0,1045.77,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25090510586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-08-19,6.6,0.0,Subscriptions,PURCHASE 0818 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-08-26,1.5,0.0,Gas,BP#16361905616 08/26 #000448754 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-08-27,3.69,0.0,Gas,BP#16361905616 08/27 #000560560 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-09-02,7.09,0.0,Gas,BP#16361905616 08/29 #000693099 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-09-02,11.47,0.0,Gas,CHECKCARD 0830 BP#16361905616 FU CHICAGO IL 55316585243462213363361,expense,boa_checking,BoA Checking
+2025-09-02,8.04,0.0,Gas,BP#16361905616 09/02 #000079218 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-09-04,5.24,0.0,Dining,PURCHASE 0903 DD/BR #339728 Q35 3127659952 IL,expense,boa_checking,BoA Checking
+2025-09-12,1.5,0.0,Gas,BP#16361905616 09/11 #000062661 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-09-15,1.5,0.0,Gas,BP#16361905616 09/13 #000557204 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-08-19,40.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# cl960q6h9,transfer,boa_checking,BoA Checking
+2025-08-22,285.57,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-08-25,274.76,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-09-02,500.0,0.0,Transfer,"Zelle Recurring payment to Double Og for ""Rent""; Conf# balw03s0b",transfer,boa_checking,BoA Checking
+2025-09-02,20.0,0.0,Transfer,Zelle payment to AIDEN ORTIZ Conf# e5zl3vsw8,transfer,boa_checking,BoA Checking
+2025-09-02,388.08,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-09-15,45.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# g8cbjxy70,transfer,boa_checking,BoA Checking

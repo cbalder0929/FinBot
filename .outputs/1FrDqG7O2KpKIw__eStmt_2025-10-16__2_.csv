@@ -1,0 +1,17 @@
+date,debits,credits,category,item,type,source,account
+2025-09-19,0.0,1356.61,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25091910586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-09-29,0.0,14.48,Transfer,"Zelle payment from Facebook Consumer Privacy User Profile Litigation for ""Your Facebook",transfer,boa_checking,BoA Checking
+2025-10-03,0.0,1705.29,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25100310586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-09-19,6.6,0.0,Subscriptions,PURCHASE 0918 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-10-07,63.5,0.0,Entertainment,CLYBOURN CLUB 10/07 #000975027 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-10-08,22.47,0.0,Alcohol,CHECKCARD 1006 E & J LIQUOR CHICAGO IL 85185645280703417256799,expense,boa_checking,BoA Checking
+2025-09-19,1.0,0.0,Transfer,Zelle payment to WALDEMAR SOLIS Conf# ddmo0ourc,transfer,boa_checking,BoA Checking
+2025-09-19,34.0,0.0,Transfer,Zelle payment to WALDEMAR SOLIS Conf# a7m1fzs7u,transfer,boa_checking,BoA Checking
+2025-09-22,410.47,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-09-30,500.0,0.0,Transfer,"Zelle Recurring payment to Double Og for ""Rent""; Conf# b5dsaq8se",transfer,boa_checking,BoA Checking
+2025-10-03,538.22,0.0,Card Payment,Online Banking payment to CRD 1149 Confirmation# 1849113426,transfer,boa_checking,BoA Checking
+2025-10-06,40.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# geakfumu1,transfer,boa_checking,BoA Checking
+2025-10-06,25.0,0.0,Transfer,Zelle payment to Israel Conf# gr33qpoao,transfer,boa_checking,BoA Checking
+2025-10-06,487.9,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-10-14,13.08,0.0,Utilities,COMCAST-XFINITY DES:CABLE SVCS ID:2372321 INDN:CHARLES *BALDERAS CO,expense,boa_checking,BoA Checking
+2025-10-07,2.5,0.0,Entertainment,CLYBOURN CLUB 10/07 #000975027 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking

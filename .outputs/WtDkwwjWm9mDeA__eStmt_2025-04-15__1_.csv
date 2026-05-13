@@ -1,0 +1,11 @@
+date,debits,credits,category,item,type,source,account
+2025-03-24,0.0,250.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b2b4cic,transfer,boa_checking,BoA Checking
+2025-03-31,0.0,200.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b30rvoi,transfer,boa_checking,BoA Checking
+2025-04-07,0.0,200.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b3ugmy5,transfer,boa_checking,BoA Checking
+2025-04-14,0.0,200.0,Transfer,Zelle payment from SEATINEZ TAX SERVICE INC Conf# 99b4mmk1c,transfer,boa_checking,BoA Checking
+2025-03-19,6.6,0.0,Subscriptions,PURCHASE 0318 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-03-26,93.32,0.0,Transfer,PURCHASE 0326 ISSA INTL SPORTS PHOENIX AZ,income,boa_checking,BoA Checking
+2025-03-31,500.0,0.0,Transfer,Zelle payment to Double Og Conf# fool4r1oy,transfer,boa_checking,BoA Checking
+2025-04-02,25.0,0.0,Transfer,Zelle payment to Grassman Conf# gytngnpp1,transfer,boa_checking,BoA Checking
+2025-04-07,362.07,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-04-15,35.0,0.0,Transfer,Zelle payment to EDUARDO FRANCO Conf# fvbtx5acp,transfer,boa_checking,BoA Checking

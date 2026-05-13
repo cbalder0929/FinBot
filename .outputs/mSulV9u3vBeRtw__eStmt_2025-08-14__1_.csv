@@ -1,0 +1,15 @@
+date,debits,credits,category,item,type,source,account
+2025-07-25,0.0,974.06,Payroll,"VPC PRUDENTIAL P DES:DIRECT DEP ID:93803591777762U INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-07-25,0.0,482.88,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25072510586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-08-08,0.0,863.51,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25080810586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-08-08,0.0,105.41,Payroll,"VPC PRUDENTIAL P DES:PAYROLL ID:56306051989862U INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-07-21,6.6,0.0,Subscriptions,PURCHASE 0718 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-08-07,4.47,0.0,Gas,BP#16361905616 08/07 #000044782 MOBILE PURCHASE BP#16361905616 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-08-11,17.61,0.0,Dining,MOBILE PURCHASE 0808 SCHLOTZSKYS 10520 CHICAGO IL,expense,boa_checking,BoA Checking
+2025-07-25,20.0,0.0,Transfer,Zelle payment to JULIAN NUNEZ Conf# b8cuwu1rh,transfer,boa_checking,BoA Checking
+2025-07-28,40.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# bsa6aipl5,transfer,boa_checking,BoA Checking
+2025-07-28,50.0,0.0,Transfer,Zelle payment to AIDEN ORTIZ Conf# egi96ymy2,transfer,boa_checking,BoA Checking
+2025-07-28,517.98,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-07-30,500.0,0.0,Transfer,"Zelle Recurring payment to Double Og for ""Rent""; Conf# c238vviip",transfer,boa_checking,BoA Checking
+2025-08-04,341.52,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-08-12,25.0,0.0,Transfer,Zelle payment to AIDEN ORTIZ Conf# enew97ild,transfer,boa_checking,BoA Checking

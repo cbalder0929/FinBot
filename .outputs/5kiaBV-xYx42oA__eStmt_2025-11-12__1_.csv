@@ -1,0 +1,15 @@
+date,debits,credits,category,item,type,source,account
+2025-10-17,0.0,1687.87,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25101710586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-10-20,0.0,2081.0,Refund,Columbia College DES:NBS REFUND ID:12561569 INDN:Charles M Balderas CO ID:8470751402,income,boa_checking,BoA Checking
+2025-10-31,0.0,1211.51,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25103110586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-10-20,6.6,0.0,Subscriptions,PURCHASE 1018 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-10-23,50.0,0.0,Education,CHECKCARD 1022 COLUMBIA COLLEGE 3126631600 IL 75329315295637400861663,expense,boa_checking,BoA Checking
+2025-10-31,13.5,0.0,Entertainment,CLYBOURN CLUB 10/31 #000387682 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-11-06,18.5,0.0,Uncategorized,EFT 11/06 #000819192 WITHDRWL EFT Chicago IL,expense,boa_checking,BoA Checking
+2025-10-20,300.0,0.0,Transfer,Zelle payment to Double Og Conf# h8hmsfe7q,transfer,boa_checking,BoA Checking
+2025-10-22,648.89,0.0,Card Payment,Online Banking payment to CRD 1149 Confirmation# 2515147970,transfer,boa_checking,BoA Checking
+2025-10-23,220.71,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-10-28,50.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# e7mbs00hk,transfer,boa_checking,BoA Checking
+2025-10-30,500.0,0.0,Transfer,"Zelle Recurring payment to Double Og for ""Rent""; Conf# h7ogxa7d9",transfer,boa_checking,BoA Checking
+2025-10-31,2.5,0.0,Entertainment,CLYBOURN CLUB 10/31 #000387682 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-11-06,2.5,0.0,Uncategorized,EFT 11/06 #000819192 WITHDRWL EFT Chicago IL,expense,boa_checking,BoA Checking

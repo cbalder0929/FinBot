@@ -1,0 +1,11 @@
+date,debits,credits,category,item,type,source,account
+2024-12-20,0.0,442.46,Payroll,"BRIDGEPORT GYM L DES:DIRECT DEP ID:555093255407OFE INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-01-03,0.0,420.51,Payroll,"BRIDGEPORT GYM L DES:DIRECT DEP ID:485074081588OFE INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2024-12-19,6.53,0.0,Subscriptions,PURCHASE 1218 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2024-12-26,93.27,0.0,Transfer,CHECKCARD 1226 ISSA INTL SPORTS 8057458111 AZ 82305094361000016697332,income,boa_checking,BoA Checking
+2024-12-17,30.0,0.0,Transfer,Zelle payment to LUIS MARTINEZ HERNANDEZ Conf# bxbftdcpr,transfer,boa_checking,BoA Checking
+2024-12-26,500.0,0.0,Transfer,Zelle payment to Kk Conf# fp3brul2v,transfer,boa_checking,BoA Checking
+2024-12-26,219.11,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:9878 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-01-08,34.0,0.0,Transfer,Zelle payment to LUIS MARTINEZ HERNANDEZ Conf# aibpndfkt,transfer,boa_checking,BoA Checking
+2025-01-13,20.0,0.0,Transfer,Zelle payment to Grassman Conf# g47jcqyga,transfer,boa_checking,BoA Checking
+2025-01-13,554.64,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:9878 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking

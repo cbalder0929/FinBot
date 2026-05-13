@@ -1,0 +1,10 @@
+date,debits,credits,category,item,type,source,account
+2025-06-27,0.0,319.56,Payroll,"VPC PRUDENTIAL P DES:DIRECT DEP ID:93993529087362U INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-07-11,0.0,863.59,Payroll,"VPC PRUDENTIAL P DES:DIRECT DEP ID:01509254638362U INDN:BALDERAS,CHARLES M CO",income,boa_checking,BoA Checking
+2025-07-11,0.0,120.0,Transfer,"Zelle payment from LUZ MARTINEZ for ""gift""; Conf# 99bfdp92o",transfer,boa_checking,BoA Checking
+2025-07-15,0.0,153.07,Taxes & Government,"IRS TREAS 310 DES: TAX REF ID:XXXXXXXXXX00909 INDN:BALDERAS, CHARLES M CO",expense,boa_checking,BoA Checking
+2025-06-20,6.6,0.0,Subscriptions,PURCHASE 0618 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-06-16,30.0,0.0,Transfer,Zelle payment to CHRISTIAN DOMINGUEZ Conf# gb0vnc5j7,transfer,boa_checking,BoA Checking
+2025-07-02,909.62,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-07-11,30.0,0.0,Transfer,Zelle payment to SANDRA NUNEZ DBA Conf# dlbcj0bwc,transfer,boa_checking,BoA Checking
+2025-07-14,131.48,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking

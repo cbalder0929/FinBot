@@ -1,0 +1,29 @@
+date,debits,credits,category,item,type,source,account
+2025-11-14,0.0,903.25,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25111410586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-11-28,0.0,1585.16,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25112810586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-12-12,0.0,1026.58,Payroll,COMCAST (CC) OF DES:PAYROLL ID:25121210586680 INDN:CHARLES BALDERAS CO,income,boa_checking,BoA Checking
+2025-11-17,13.5,0.0,Transfer,EFT 11/15 #000139180 WITHDRWL EFT Chicago IL,income,boa_checking,BoA Checking
+2025-11-19,6.6,0.0,Subscriptions,PURCHASE 1118 SPOTIFY 8777781161 NY,expense,boa_checking,BoA Checking
+2025-11-24,33.5,0.0,Entertainment,CLYBOURN CLUB 11/24 #000955835 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-02,43.5,0.0,Entertainment,CLYBOURN CLUB 12/02 #000242564 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-04,43.5,0.0,Uncategorized,EFT 12/04 #000794069 WITHDRWL EFT Chicago IL,expense,boa_checking,BoA Checking
+2025-12-08,63.5,0.0,Entertainment,CLYBOURN CLUB 12/06 #000264975 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-08,43.5,0.0,Entertainment,CLYBOURN CLUB 12/08 #000484107 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-09,33.5,0.0,Entertainment,CLYBOURN CLUB 12/09 #000627919 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-10,53.5,0.0,Entertainment,CLYBOURN CLUB 12/10 #000767513 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-12-15,13.5,0.0,Entertainment,CLYBOURN CLUB 12/13 #000175935 WITHDRWL CLYBOURN CLUB RD CHICAGO IL,expense,boa_checking,BoA Checking
+2025-11-18,527.98,0.0,Card Payment,Online Banking payment to CRD 1149 Confirmation# 4047278559,transfer,boa_checking,BoA Checking
+2025-11-19,446.41,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-12-01,500.0,0.0,Transfer,"Zelle Recurring payment to Double Og for ""Rent""; Conf# ixhhmm3qn",transfer,boa_checking,BoA Checking
+2025-12-09,553.78,0.0,Card Payment,Online Banking payment to CRD 1149 Confirmation# 1833159785,transfer,boa_checking,BoA Checking
+2025-12-10,499.44,0.0,Card Payment,DISCOVER DES:E-PAYMENT ID:1422 INDN:BALDERAS CHARLES CO ID:2510020270,transfer,boa_checking,BoA Checking
+2025-12-11,40.0,0.0,Transfer,Zelle payment to CESAR PAREDES Conf# ccfttpras,transfer,boa_checking,BoA Checking
+2025-11-17,2.5,0.0,Transfer,EFT 11/15 #000139180 WITHDRWL EFT Chicago IL,income,boa_checking,BoA Checking
+2025-11-24,2.5,0.0,Entertainment,CLYBOURN CLUB 11/24 #000955835 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-02,2.5,0.0,Entertainment,CLYBOURN CLUB 12/02 #000242564 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-04,2.5,0.0,Uncategorized,EFT 12/04 #000794069 WITHDRWL EFT Chicago IL,expense,boa_checking,BoA Checking
+2025-12-08,2.5,0.0,Entertainment,CLYBOURN CLUB 12/06 #000264975 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-08,2.5,0.0,Entertainment,CLYBOURN CLUB 12/08 #000484107 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-09,2.5,0.0,Entertainment,CLYBOURN CLUB 12/09 #000627919 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-10,2.5,0.0,Entertainment,CLYBOURN CLUB 12/10 #000767513 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
+2025-12-15,2.5,0.0,Entertainment,CLYBOURN CLUB 12/13 #000175935 WITHDRWL CLYBOURN CLUB RD,expense,boa_checking,BoA Checking
