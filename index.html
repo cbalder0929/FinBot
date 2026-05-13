@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinScrape — Financial Statement Analyzer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <!-- ============================================================
+         LEFT COLUMN — file inputs
+         ============================================================ -->
+    <section class="left-col">
+      <header class="app-header">
+        <h1 class="app-title">
+          <span class="title-mark">Fin</span><span class="title-accent">Scrape</span>
+        </h1>
+        <p class="app-tagline">Drop your statements. Watch the robot do the rest.</p>
+      </header>
+
+      <div
+        id="dropZone"
+        class="drop-zone"
+        role="button"
+        tabindex="0"
+        aria-label="Drop files here or click to choose"
+      >
+        <svg class="drop-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <path
+            d="M20 44a10 10 0 1 1 2-19.8A14 14 0 0 1 48 26a8 8 0 0 1 0 16H22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M32 32v18M24 40l8-8 8 8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <p class="drop-title">Drop files here</p>
+        <p class="drop-hint">PDF or CSV — multiple files welcome</p>
+      </div>
+
+      <div class="picker-row">
+        <button id="chooseFilesBtn" class="btn btn-secondary" type="button">
+          <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+            <path
+              d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14 3v6h6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Choose Files
+        </button>
+        <button id="chooseFolderBtn" class="btn btn-secondary" type="button">
+          <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+            <path
+              d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Choose Folder
+        </button>
+        <input
+          id="fileInput"
+          type="file"
+          multiple
+          accept=".pdf,.csv"
+          hidden
+        />
+        <input id="folderInput" type="file" webkitdirectory multiple hidden />
+      </div>
+
+      <div id="fileListWrap" class="file-list-wrap" hidden>
+        <div class="file-list-header">
+          <span class="file-list-title">Staged files</span>
+          <span id="fileListCount" class="file-list-count">0</span>
+        </div>
+        <ul id="fileList" class="file-list" aria-live="polite"></ul>
+      </div>
+
+      <button id="startBtn" class="btn btn-primary cta" type="button" disabled>
+        <span class="cta-label">Start Processing</span>
+        <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M5 12h14M13 6l6 6-6 6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </section>
+
+    <!-- ============================================================
+         RIGHT COLUMN — robot + reports (tab-switched)
+         ============================================================ -->
+    <section class="right-col">
+      <div class="tab-row" role="tablist">
+        <button id="tabUpload"  class="tab-btn is-active" role="tab" type="button" aria-selected="true">Upload</button>
+        <button id="tabReports" class="tab-btn"           role="tab" type="button" aria-selected="false">Reports</button>
+      </div>
+
+      <!-- ====== Upload view (robot) ====== -->
+      <div id="viewUpload" class="right-view is-active">
+      <div class="robot-stage">
+        <div class="robot-glow" aria-hidden="true"></div>
+
+        <!-- Robot SVG. State classes (state-idle, state-uploading, etc.)
+             are toggled on the root <svg> by robot.js. -->
+        <svg
+          id="robot"
+          class="robot state-idle"
+          viewBox="0 0 320 420"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Animated robot"
+          role="img"
+        >
+          <defs>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3a2a6b" />
+              <stop offset="100%" stop-color="#1e1738" />
+            </linearGradient>
+            <linearGradient id="headGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4a3580" />
+              <stop offset="100%" stop-color="#2a1f55" />
+            </linearGradient>
+            <radialGradient id="screenGrad" cx="0.5" cy="0.5" r="0.7">
+              <stop offset="0%" stop-color="#1a0f3a" />
+              <stop offset="100%" stop-color="#0b0720" />
+            </radialGradient>
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- everything inside this group bobs as a unit -->
+          <g class="robot-float">
+            <!-- Antenna -->
+            <g class="robot-antenna">
+              <line
+                x1="160"
+                y1="62"
+                x2="160"
+                y2="32"
+                stroke="#6b4ba8"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <circle
+                class="robot-antenna-tip"
+                cx="160"
+                cy="24"
+                r="9"
+                fill="#C084FC"
+                filter="url(#softGlow)"
+              />
+            </g>
+
+            <!-- Head -->
+            <g class="robot-head">
+              <rect
+                x="90"
+                y="60"
+                width="140"
+                height="110"
+                rx="24"
+                fill="url(#headGrad)"
+                stroke="#5a3fa0"
+                stroke-width="2"
+              />
+              <!-- ear bolts -->
+              <circle cx="88" cy="115" r="6" fill="#3a2a6b" stroke="#5a3fa0" stroke-width="1.5" />
+              <circle cx="232" cy="115" r="6" fill="#3a2a6b" stroke="#5a3fa0" stroke-width="1.5" />
+
+              <!-- Eyes: normal -->
+              <g class="robot-eyes robot-eyes-normal">
+                <circle class="robot-eye robot-eye-left" cx="130" cy="115" r="11" fill="#C084FC" filter="url(#softGlow)" />
+                <circle class="robot-eye robot-eye-right" cx="190" cy="115" r="11" fill="#C084FC" filter="url(#softGlow)" />
+                <!-- highlights -->
+                <circle cx="133" cy="111" r="3" fill="#F5F3FF" opacity="0.85" />
+                <circle cx="193" cy="111" r="3" fill="#F5F3FF" opacity="0.85" />
+              </g>
+
+              <!-- Eyes: happy (done state) -->
+              <g class="robot-eyes robot-eyes-happy" opacity="0">
+                <path
+                  d="M118 118 Q130 102 142 118"
+                  fill="none"
+                  stroke="#D946EF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  filter="url(#softGlow)"
+                />
+                <path
+                  d="M178 118 Q190 102 202 118"
+                  fill="none"
+                  stroke="#D946EF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  filter="url(#softGlow)"
+                />
+              </g>
+
+              <!-- Eyes: X (error state) -->
+              <g class="robot-eyes robot-eyes-error" opacity="0">
+                <g stroke="#F43F5E" stroke-width="4" stroke-linecap="round">
+                  <line x1="121" y1="106" x2="139" y2="124" />
+                  <line x1="139" y1="106" x2="121" y2="124" />
+                  <line x1="181" y1="106" x2="199" y2="124" />
+                  <line x1="199" y1="106" x2="181" y2="124" />
+                </g>
+              </g>
+
+              <!-- mouth: a tiny grille -->
+              <g class="robot-mouth">
+                <rect x="140" y="148" width="40" height="8" rx="3" fill="#0b0720" />
+                <line x1="148" y1="148" x2="148" y2="156" stroke="#3a2a6b" stroke-width="1.2" />
+                <line x1="160" y1="148" x2="160" y2="156" stroke="#3a2a6b" stroke-width="1.2" />
+                <line x1="172" y1="148" x2="172" y2="156" stroke="#3a2a6b" stroke-width="1.2" />
+              </g>
+            </g>
+
+            <!-- Neck -->
+            <rect x="146" y="170" width="28" height="14" fill="#2a1f55" stroke="#5a3fa0" stroke-width="1.5" />
+
+            <!-- Arms -->
+            <g class="robot-arm robot-arm-left">
+              <rect x="44" y="200" width="24" height="90" rx="12" fill="url(#bodyGrad)" stroke="#5a3fa0" stroke-width="2" />
+              <circle cx="56" cy="295" r="13" fill="#3a2a6b" stroke="#5a3fa0" stroke-width="2" />
+            </g>
+            <g class="robot-arm robot-arm-right">
+              <rect x="252" y="200" width="24" height="90" rx="12" fill="url(#bodyGrad)" stroke="#5a3fa0" stroke-width="2" />
+              <circle cx="264" cy="295" r="13" fill="#3a2a6b" stroke="#5a3fa0" stroke-width="2" />
+            </g>
+
+            <!-- Body -->
+            <g class="robot-body">
+              <rect
+                x="70"
+                y="184"
+                width="180"
+                height="160"
+                rx="22"
+                fill="url(#bodyGrad)"
+                stroke="#5a3fa0"
+                stroke-width="2"
+              />
+              <!-- shoulder bolts -->
+              <circle cx="82" cy="198" r="3.5" fill="#C084FC" opacity="0.7" />
+              <circle cx="238" cy="198" r="3.5" fill="#C084FC" opacity="0.7" />
+              <circle cx="82" cy="330" r="3.5" fill="#C084FC" opacity="0.7" />
+              <circle cx="238" cy="330" r="3.5" fill="#C084FC" opacity="0.7" />
+
+              <!-- Screen frame -->
+              <rect
+                x="98"
+                y="214"
+                width="124"
+                height="92"
+                rx="12"
+                fill="url(#screenGrad)"
+                stroke="#5a3fa0"
+                stroke-width="2"
+              />
+
+              <!-- Screen contents (one group per state, toggled via opacity) -->
+              <g class="screen-icon screen-idle" opacity="1">
+                <!-- soft pulsing dot -->
+                <circle cx="160" cy="260" r="6" fill="#C084FC" class="screen-pulse-dot" filter="url(#softGlow)" />
+              </g>
+
+              <g class="screen-icon screen-uploading" opacity="0">
+                <!-- up arrow -->
+                <g class="screen-up-arrow" stroke="#C084FC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#softGlow)">
+                  <path d="M160 286 V234" />
+                  <path d="M142 252 L160 234 L178 252" />
+                </g>
+              </g>
+
+              <g class="screen-icon screen-parsing" opacity="0">
+                <!-- scanning lines -->
+                <g class="screen-scan-lines" fill="#C084FC" filter="url(#softGlow)">
+                  <rect x="112" y="232" width="96" height="3" rx="1.5" opacity="0.9" />
+                  <rect x="112" y="244" width="72" height="3" rx="1.5" opacity="0.7" />
+                  <rect x="112" y="256" width="88" height="3" rx="1.5" opacity="0.85" />
+                  <rect x="112" y="268" width="60" height="3" rx="1.5" opacity="0.6" />
+                  <rect x="112" y="280" width="80" height="3" rx="1.5" opacity="0.8" />
+                </g>
+                <!-- moving scan bar -->
+                <rect class="screen-scan-bar" x="98" y="214" width="124" height="6" fill="#D946EF" opacity="0.6" filter="url(#softGlow)" />
+              </g>
+
+              <g class="screen-icon screen-categorizing" opacity="0">
+                <!-- spinning sorter -->
+                <g class="screen-spinner" filter="url(#softGlow)">
+                  <circle cx="160" cy="260" r="20" fill="none" stroke="#3a2a6b" stroke-width="4" />
+                  <path
+                    d="M160 240 A20 20 0 0 1 180 260"
+                    fill="none"
+                    stroke="#C084FC"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <!-- sort bars below spinner -->
+                <g fill="#C084FC" opacity="0.7">
+                  <rect x="118" y="290" width="6" height="8" rx="1.5" />
+                  <rect x="128" y="288" width="6" height="10" rx="1.5" />
+                  <rect x="138" y="284" width="6" height="14" rx="1.5" />
+                </g>
+              </g>
+
+              <g class="screen-icon screen-done" opacity="0">
+                <!-- checkmark -->
+                <path
+                  class="screen-check"
+                  d="M132 262 L154 282 L190 240"
+                  fill="none"
+                  stroke="#D946EF"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  filter="url(#softGlow)"
+                />
+              </g>
+
+              <g class="screen-icon screen-error" opacity="0">
+                <!-- exclamation -->
+                <g filter="url(#softGlow)">
+                  <rect x="156" y="230" width="8" height="36" rx="3" fill="#F43F5E" />
+                  <circle cx="160" cy="280" r="5" fill="#F43F5E" />
+                </g>
+              </g>
+
+              <!-- Status LED at bottom of chest -->
+              <circle class="robot-status-led" cx="160" cy="324" r="4" fill="#C084FC" filter="url(#softGlow)" />
+            </g>
+          </g>
+        </svg>
+
+        <div class="robot-shadow" aria-hidden="true"></div>
+      </div>
+
+      <div class="status-block">
+        <p id="statusText" class="status-text">Waiting for files…</p>
+        <div class="progress-track" aria-label="Processing progress">
+          <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+        </div>
+      </div>
+      </div><!-- /viewUpload -->
+
+      <!-- ====== Reports view ====== -->
+      <div id="viewReports" class="right-view reports-view">
+        <div class="reports-toolbar">
+          <h2 class="reports-title">Reports</h2>
+          <div class="reports-actions">
+            <button id="reportsRefreshBtn" class="btn btn-secondary btn-compact" type="button">
+              <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+                <path d="M3 12a9 9 0 0 1 15.5-6.3M21 4v5h-5M21 12a9 9 0 0 1-15.5 6.3M3 20v-5h5"
+                      fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Refresh
+            </button>
+            <button id="reportsClearBtn" class="btn btn-danger btn-compact" type="button">
+              <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+                <path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"
+                      fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 11v5M14 11v5"
+                      fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round"/>
+              </svg>
+              New project
+            </button>
+            <button id="reportsNarrateBtn" class="btn btn-primary btn-compact" type="button">
+              <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+                <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                      fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+              AI summary
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty state -->
+        <div id="reportsEmpty" class="reports-empty">
+          <p>No data yet. Process some statements on the Upload tab first.</p>
+        </div>
+
+        <!-- Loaded report sections -->
+        <div id="reportsBody" class="reports-body" hidden>
+
+          <div id="narrationBlock" class="narration-block" hidden>
+            <div class="narration-icon" aria-hidden="true">✨</div>
+            <p id="narrationText" class="narration-text"></p>
+          </div>
+
+          <div class="topline-grid">
+            <div class="card topline-card topline-income">
+              <div class="card-label">Income</div>
+              <div class="card-value" id="toplineIncome">$0</div>
+            </div>
+            <div class="card topline-card topline-spending">
+              <div class="card-label">Spending</div>
+              <div class="card-value" id="toplineSpending">$0</div>
+            </div>
+            <div class="card topline-card topline-net">
+              <div class="card-label">Net</div>
+              <div class="card-value" id="toplineNet">$0</div>
+            </div>
+            <div class="card topline-card topline-cat">
+              <div class="card-label">Top category</div>
+              <div class="card-value card-value-sm" id="toplineTopCat">—</div>
+            </div>
+          </div>
+
+          <div class="period-line" id="periodLine"></div>
+
+          <!-- Phase 3 — free-text Q&A. Slow on CPU-only Ollama (each
+               question is two LLM calls), so the UI sets clear
+               expectations and always shows the pandas result even
+               when the narration step fails. -->
+          <section class="report-section qa-section">
+            <h3 class="section-title">Ask a question</h3>
+            <form id="qaForm" class="qa-form">
+              <input
+                id="qaInput"
+                class="qa-input"
+                type="text"
+                autocomplete="off"
+                placeholder='e.g. "How much did I spend on dining last month?"'
+              />
+              <button id="qaBtn" class="btn btn-primary btn-compact qa-btn" type="submit">
+                Ask
+              </button>
+            </form>
+            <div class="qa-examples">
+              <button class="qa-example" type="button" data-q="How much did I spend on groceries this year?">Groceries this year</button>
+              <button class="qa-example" type="button" data-q="Top 5 merchants this year">Top 5 merchants</button>
+              <button class="qa-example" type="button" data-q="What's my net cashflow for last month?">Net last month</button>
+              <button class="qa-example" type="button" data-q="How much do I spend on subscriptions per month on average?">Avg subscriptions</button>
+            </div>
+            <div id="qaThinking" class="qa-thinking" hidden>
+              <span class="qa-spinner" aria-hidden="true"></span>
+              <span id="qaThinkingText">Asking Ollama… this can take a few minutes on a CPU-only system.</span>
+            </div>
+            <div id="qaAnswer" class="qa-answer" hidden>
+              <p id="qaNarration" class="qa-narration"></p>
+              <div id="qaResult" class="qa-result"></div>
+              <details class="qa-debug">
+                <summary>Show filter the LLM used</summary>
+                <pre id="qaSpec" class="qa-spec"></pre>
+              </details>
+            </div>
+          </section>
+
+          <section class="report-section">
+            <h3 class="section-title">Monthly trend</h3>
+            <ul id="trendList" class="trend-list"></ul>
+          </section>
+
+          <section class="report-section">
+            <h3 class="section-title">Spending by category</h3>
+            <ul id="categoryList" class="bar-list"></ul>
+          </section>
+
+          <section class="report-section">
+            <h3 class="section-title">Top merchants</h3>
+            <ul id="merchantList" class="merchant-list"></ul>
+          </section>
+        </div>
+      </div><!-- /viewReports -->
+    </section>
+  </main>
+
+  <script src="robot.js"></script>
+  <script src="app.js"></script>
+  <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy this file to category_overrides.json and add your own merchants. Keys are substrings matched case-insensitively against the transaction 'item'. The first override that matches wins (then regex rules in categorize.py).",
+
+  "MY APARTMENT LLC":  { "category": "Rent & Housing", "type": "expense" },
+  "EMPLOYER NAME":     { "category": "Payroll",        "type": "income"  },
+  "FAVORITE COFFEE":   { "category": "Dining",         "type": "expense" },
+  "LOCAL GROCER":      { "category": "Groceries",      "type": "expense" }
+}

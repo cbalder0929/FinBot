@@ -1,0 +1,52 @@
+INFO:     127.0.0.1:52980 - "GET / HTTP/1.1" 200 OK
+[narrate] topline: timed out
+INFO:     127.0.0.1:52983 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+[narrate] topline: timed out
+INFO:     127.0.0.1:53007 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52762 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52767 - "GET /robot.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52931 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62740 - "GET /reports.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62740 - "GET /api/reports/trend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52931 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52767 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64479 - "DELETE /api/files HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "POST /api/parse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64332 - "GET /api/reports/trend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50723 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62092 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62092 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49184 - "GET /api/reports/trend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52130 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55286 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51739 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "POST /api/parse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55584 - "GET /api/reports/trend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53786 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+[narrate] topline: timed out
+INFO:     127.0.0.1:56099 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+[narrate] topline: timed out
+INFO:     127.0.0.1:62394 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51745 - "DELETE /api/files HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64772 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64772 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58093 - "GET /robot.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61286 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "GET /reports.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61286 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58093 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64772 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "GET /api/reports/trend HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:56739 - "POST /api/parse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58275 - "GET /api/reports/trend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56739 - "GET /api/reports/topline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60367 - "GET /api/reports/top-merchants?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60960 - "GET /api/reports/by-category HTTP/1.1" 200 OK
+[narrate] topline: timed out
+INFO:     127.0.0.1:60960 - "GET /api/reports/topline?narrate=1 HTTP/1.1" 200 OK
